@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+let upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+let lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+let numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+let special = ['+', '-', '&','!' , '(', ')', '{', '}', '[', ']', '^', '~', '*', '?', ':']
+
+let udigit = prompt('From 8 to 128, How many digits would you like?')
+let uucase = prompt('Would you like uppercase?')
+let ulcase = prompt('Would you like lowercase?')
+let unum = prompt('Would you like some numbers?')
+let uchar = prompt('Would you like special characters?')
+
+for (let i=0; i<udigit; i++){
+
+    if (uucase==='yes' && ulcase==='yes' && unum==='yes' && uchar==='yes') {
+ 
+        let case1 = [upperCase[Math.floor(Math.random()*26)], lowerCase[Math.floor(Math.random()*26)], numbers[Math.floor(Math.random()*10)], special[Math.floor(Math.random()*15)]]
+        console.log(case1[Math.floor(Math.random()*4)])
+
+    }   else if (uucase==='no' && ulcase==='yes' && unum==='yes' && uchar==='yes'){
+
+        let case2 = [ulran,unran,ucran] 
+        console.log(case2[Math.floor(Math.random()*3)])
+
+    }   else if (uucase==='yes' && ulcase==='no' && unum==='yes' && uchar==='yes'){
+
+        let case3 = [upperCase[Math.floor(Math.random()*26)], numbers[Math.floor(Math.random()*10)], special[Math.floor(Math.random()*15)]]
+        console.log(case3[Math.floor(Math.random()*3)])
+
+    }   else if (uucase==='yes' && ulcase==='yes' && unum==='no' && uchar==='yes'){
+
+        let case4 = [upperCase[Math.floor(Math.random()*26)], lowerCase[Math.floor(Math.random()*26)], special[Math.floor(Math.random()*15)]]
+        console.log(case4[Math.floor(Math.random()*3)])        
+
+    }   else if (uucase==='yes' && ulcase==='yes' && unum==='yes' && uchar==='no'){
+
+        let case5 = [upperCase[Math.floor(Math.random()*26)], lowerCase[Math.floor(Math.random()*26)], numbers[Math.floor(Math.random()*10)]]
+        console.log(case5[Math.floor(Math.random()*3)])
+
+    }   else if (uucase==='no' && ulcase==='no' && unum==='yes' && uchar==='yes'){
+
+        let case6 = [special[Math.floor(Math.random()*15)], numbers[Math.floor(Math.random()*10)]]
+        console.log(case6[Math.floor(Math.random()*2)])
+
+    }   else if (uucase==='yes' && ulcase==='yes' && unum==='no' && uchar==='no'){
+
+        let case7 = [upperCase[Math.floor(Math.random()*26)], lowerCase[Math.floor(Math.random()*26)]]
+        console.log(case7[Math.floor(Math.random()*2)])
+
+    }   else if (uucase==='no' && ulcase==='yes' && unum==='no' && uchar==='yes'){
+
+        let case8 = [lowerCase[Math.floor(Math.random()*26)], special[Math.floor(Math.random()*15)]]
+        console.log(case8[Math.floor(Math.random()*2)])
+
+    }   else if (uucase==='no' && ulcase==='yes' && unum==='no' && uchar==='yes'){
+
+        let case9 = [upperCase[Math.floor(Math.random()*26)], numbers[Math.floor(Math.random()*10)]]
+        console.log(case9[Math.floor(Math.random()*2)])
+
+    }   else if (uucase==='no' && ulcase==='yes' && unum==='yes' && uchar==='no'){
+
+        let case10 = [lowerCase[Math.floor(Math.random()*26)], numbers[Math.floor(Math.random()*10)]]
+        console.log(case10[Math.floor(Math.random()*2)])
+
+    }   else if (uucase==='no' && ulcase==='yes' && unum==='yes' && uchar==='no'){
+
+        let case11 = [upperCase[Math.floor(Math.random()*26)], special[Math.floor(Math.random()*15)]]
+        console.log(case11[Math.floor(Math.random()*2)])
+
+    }   else if (uucase==='no' && ulcase==='no' && unum==='no' && uchar==='yes'){
+
+        console.log(special[Math.floor(Math.random()*15)])
+
+    }   else if (uucase==='no' && ulcase==='no' && unum==='yes' && uchar==='no'){
+
+        console.log(numbers[Math.floor(Math.random()*10)])
+
+    }   else if (uucase==='no' && ulcase==='yes' && unum==='no' && uchar==='no'){
+
+        console.log(lowerCase[Math.floor(Math.random()*26)])
+
+    }   else if (uucase==='yes' && ulcase==='no' && unum==='no' && uchar==='no'){
+
+        console.log(upperCase[Math.floor(Math.random()*26)])
+
+    }   else {
+
+        console.log('Please try again')
+
+    }
+}
+
+</script>
+</body>
+</html>
