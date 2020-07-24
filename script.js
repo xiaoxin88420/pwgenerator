@@ -45,10 +45,6 @@ function generatePassword() {
 
     let finalpool = q1.concat(q2,q3,q4)
 
-    // let result = finalpool.slice(0, udigit).join('')
-
-    // return result
-
     let pw = []
 
     for (let i=0; i<udigit; i++){
@@ -62,9 +58,6 @@ function generatePassword() {
     return result
 
 }
-
-
-
 
 
 function writePassword() {
